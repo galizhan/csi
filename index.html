@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)https://my.sdu.edu.kz/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Login - Student Information System</title>
+<link rel="icon" href="https://my.sdu.edu.kz/images/icons/favicon.ico" type="image/png">
+<style type="text/css">
+body, html {
+	font-size:13px;
+	font-style:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+}
+.loginLink {
+	color:#4FA7FF; text-decoration:none; font-size:12px
+}
+.loginLink:hover {
+	text-decoration:underline; color:#0080FF
+}
+.loginDiv {
+	background-color:#f1f1f1;
+	border:1px solid #e5e5e5;
+	padding:20px 15px;
+	width:230px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.q-button {
+	font-size:13px;
+	padding: 2px 3px;
+}
+#top_back {
+	width:100%;
+	height:110px;
+	<!--background:url('images/top-back.gif') left top repeat-x #fff; -->
+	clear: both;
+	float: none;
+	top:0px;
+	position: relative;
+}
+#top_logo {
+	height:100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#top_lang {
+	height: 100%;
+	position: absolute;
+	right: 5px;
+	top: 2px;
+}
+input.inp {
+	width:90%;
+	font-size:13px;
+	padding: 7px 4px;
+}
+.wac {
+	margin:0;
+	width:300px;
+}
+</style>
+<script>
+	function OnL() {
+		var el = document.getElementById("username");
+		if(typeof el == "undefined") return;
+		if(el.value != "") {
+			var elPsw = document.getElementById("password");
+			elPsw.focus();
+		}
+		else el.focus();
+	}
+</script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body onload="OnL();">
+<div style="position:absolute;width:100%;height:100%;left:0;top:0;overflow:hidden;min-height:700px;padding:0;margin:0;">
+
+
+<div class="container" >
+<div class="d-flex flex-row">
+<div class="d-flex justify-content-center col-md-12">
+
+<img src="login/login-logo-ps.png" />
+
+</div>
+<div class="col-md-6">
+
+<div style="position:relative; text-align:right; ">
+	<a href="https://my.sdu.edu.kz/?dil=kz"><img height="15" src="login/kz.png" title="Қазақ тілі" border="0"></a>&nbsp;
+	<a href="https://my.sdu.edu.kz/?dil=en"><img height="15" src="login/gb.png" title="English" border="0"></a>&nbsp;
+</div>
+
+</div>
+</div>
+<div class="d-flex flex-row" style="margin-top:50px;">
+
+<div class="col-md-6 d-flex justify-content-end" >
+<div style="border:2px solid #fb8303;padding:6px;border-radius:5px;" class="wac">
+<div class="loginDiv" align="left" style="width:auto;">
+    <div style="margin-bottom:12px; text-align:center">
+
+   <!-- <img src="images/logo45.png" style="float:left" /> -->
+
+        <span style="color:orange; line-height:22px;font-size:16px;">
+            <i>
+                Login by email or phone           </i>
+        </span>
+    </div>
+    <br style="clear:both">
+
+    <form method="post" action="https://my.sdu.edu.kz/loginAuth.php" autocomplete="off">
+        <div>
+            <label style="display: block; margin:6px 0;color:#005490;"><b>Student number or email</b></label>
+            <input id="username" name="username" value="150107095" type="text" class="inp" autocomplete="off">
+        </div>
+        <div style="margin-top:10px">
+            <label style="display: block; margin:6px 0;color:#005490;"><b>Password</b></label>
+            <input id="password" name="password" type="password" class="inp" autocomplete="off">
+        </div>
+                <br>
+        <input type="submit" class="q-button" name="LogIn" value=" Log in ">
+        <div align="right"><a class="loginLink" href="https://my.sdu.edu.kz/passwForgot">Can't access my account</a></div>
+    </form>
+</div>
+</div>
+</div>
+<div class="col-md-6 d-flex justify-content-start">
+<div style="border:2px solid #fb8303;padding:6px;border-radius:5px;" class="wac">
+<div class="loginDiv" align="left" style="width:auto;">
+    <div style="margin-bottom:12px; text-align:center">
+
+   <!-- <img src="images/logo45.png" style="float:left" /> -->
+
+        <span style="color:orange; line-height:22px;font-size:16px;">
+            <i>
+                Or login with
+        </span>
+    </div>
+		<div class="d-flex flex-row">
+
+		<div class="btn btn-outline-primary col-md-6" style="margin-top:40px;margin-bottom:40px;">
+		<a href="old_main_page.html">
+    <img class="img-fluid" src="login/facebook_icon.png" />
+		<p>
+			facebook
+		</p>
+	</a>
+		</div>
+		<div class="btn btn-outline-danger	 col-md-6" style="margin-top:40px;margin-bottom:40px;">
+			<a href="old_main_page.html">
+    <img class="img-fluid" src="login/google_icon.png" />
+		<p>
+			google
+		</p>
+		</a>
+		</div>
+
+	</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<div style="position:absolute; left:0; bottom:0; text-align:right; height:19pt; width:100%; margin-top:10px; background-color:#fb8303" ;="">
+	<div style="padding:4px 20px; border-top:1px solid #FFE0C1; color:#999; color:#FFFFFF; font-size:12pt; font:Arial, Helvetica, sans-serif; text-align:center">Suleyman Demirel University © 2015    </div>
+</div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body></html>
